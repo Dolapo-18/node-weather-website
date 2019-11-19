@@ -10,7 +10,7 @@ const foreCast = (latitude, longitude, callback) => {
         } else if(body.error) {
             callback('Location not found :(', undefined);
         } else {
-            callback(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out, There is ${body.currently.precipProbability}% chance of rain`);
+            callback(undefined, `${body.daily.data[0].summary} It is currently ${body.currently.temperature} degrees out, with a humidity of ${body.currently.humidity}.There is ${body.currently.precipProbability}% chance of rain`);
         }
     });
 
