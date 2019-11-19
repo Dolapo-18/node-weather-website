@@ -7,7 +7,7 @@ const hbs = require('hbs');
 const geoCoding = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 
 console.log(__dirname);
