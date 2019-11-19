@@ -1,5 +1,3 @@
-console.log('Printing from a client side javascript!!!');
-
 //Using the fetch API
 
 const weatherForm = document.querySelector('form');
